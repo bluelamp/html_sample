@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* 초기화 */
+body, header, main, footer, div, h1, h2, h3, h4, ul, li, a, address, span, dl, dt, dd {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+address {
+    font-style: normal;
+}
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+/* header */
+#headerWrap {
+    width: 100%;
+    background-color: rgba(110,0,0,0.9);
+}
+#header {
+    margin: 0 auto;
+    width: 1280px;
+    height: 96px;
+    
+}
+.mainlogo {
+    width: 160px;
+    height: 95px;
+    background: url(../media/logo_gnb.png) no-repeat center center;
+    text-indent: -9999px;
+    float: left;
+}
+#gnb {
+    padding: 6px 0 0 180px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+}
+#gnb .depth01 {
+    height: 90px;
+}
+#gnb .depth01 > li {
+    display: inline-block;
+    height: 90px;
+}
+#gnb .depth01 > li a {
+    line-height: 90px;
+    padding: 0 15px;
+    color: #fff;
+}
+#gnb .depth02 {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 96px;
+    left: 0;
+    text-align: center;
+}
+#gnb .depth02 > li {
+    display: inline-block;
+    margin: 10px 25px; 
+}
+
+#gnb_options {
+    float: right;
+    padding-top:  25px;
+}
+#gnb_options ul {
+    float: left;
+}
+#gnb_options > a {
+    float: left;
+    height: 49px;
+    width: 49px;
+    line-height: 49px;
+    margin-left: 7px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-indent: 9999px;
+}
+#gnb_options ul li {
+    position: relative;
+    float: left;
+}
+#gnb_options ul li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background-color: #aaa;
+    opacity: .5;
+    margin-top: 20px;
+}
+#gnb_options ul li:nth-child(2)::after {
+    content: none;
+}
+#gnb_options ul li a {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 52px;
+}
+#findMenu {
+    background: url(../media/gnb_util.png) 0 0 no-repeat;
+}
+#entireMenu {
+    background: url(../media/gnb_util.png) right 0 no-repeat;
+}
